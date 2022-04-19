@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2022.2.14)  19 APR 2022 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 Gentoo Linux) (preloaded format=pdflatex 2022.2.14)  19 APR 2022 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,12 +119,17 @@ Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
-Class scrartcl Info: File `scrsize11pt.clo' used instead of
-(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 223
-9.
+Package scrartcl Info: You've used standard option `12pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=12pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=12pt' there
+(scrartcl)             instead of `12pt', too.
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input l
+ine 2239.
 
-(/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt
+(/usr/share/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (12pt
 )
 )
 (/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
@@ -136,21 +141,21 @@ Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@temp=\skip51
 \footheight=\skip52
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 12
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 418.25555pt
+(typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 595.80026pt
-(typearea)              \topmargin      = -25.16531pt
-(typearea)              \headheight     = 17.0pt
-(typearea)              \headsep        = 20.40001pt
-(typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 47.6pt
-(typearea)              \baselineskip   = 13.6pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
 (typearea)              on input line 1741.
 )
 \c@part=\count180
@@ -404,15 +409,15 @@ LaTeX Font Info:    ... okay on input line 42.
 * \textheight=591.53027pt
 * \oddsidemargin=17.35712pt
 * \evensidemargin=17.35712pt
-* \topmargin=-63.53334pt
+* \topmargin=-64.88333pt
 * \headheight=72.26999pt
-* \headsep=20.40001pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=59.7508pt
+* \headsep=21.75pt
+* \topskip=12.0pt
+* \footskip=50.75pt
+* \marginparwidth=49.79233pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -446,37 +451,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 45.
+(Font)              <17.28> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 45.
+(Font)              <12> on input line 45.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     76.
+(LaTeX3)     88.
 
 
 LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
-(LaTeX3)     76.
+(LaTeX3)     88.
 
  (./template-dsa.aux) ) 
 Here is how much of TeX's memory you used:
- 7643 strings out of 480860
- 136042 string characters out of 5901602
- 567387 words of memory out of 5000000
- 24850 multiletter control sequences out of 15000+600000
- 406124 words of font info for 36 fonts, out of 8000000 for 9000
+ 7651 strings out of 480860
+ 136118 string characters out of 5901602
+ 567485 words of memory out of 5000000
+ 24855 multiletter control sequences out of 15000+600000
+ 407087 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  111i,11n,116p,10634b,283s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on template-dsa.pdf (2 pages, 40280 bytes).
+r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on template-dsa.pdf (2 pages, 45238 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 27 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
