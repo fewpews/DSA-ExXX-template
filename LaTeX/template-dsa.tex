@@ -1,0 +1,127 @@
+\documentclass{scrartcl}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[]{fontenc}
+
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%\usepackage{csquotes}
+\usepackage{graphicx}
+%\usepackage{amsmath}
+%\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[ headheight=1in]{geometry}
+
+
+%TODO
+\def \workSheet {00}
+\def \dateOfFinishing {16.04.2022}
+%TODO
+
+
+\title{DSA Abgabe Blatt \workSheet}
+\author{Anton Sproll [], Omid Pourazar [], Jannik Becker [3597837]}
+\date{\dateOfFinishing }
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\rhead{Anton Sproll [] \\ Omid Pourazar [] \\ Jannik Becker [3597837]}
+\lhead{2022 Sommersemester \\ \dateOfFinishing \\ DSA Übungsblatt \workSheet}
+\cfoot{\thepage}
+
+\begin{document}
+
+	\maketitle
+	\newpage
+
+	\section*{Aufgabe 1}
+	\subsection*{a)}
+	Eine Datenstruktur ist eine  Ansammlung von mehreren beliebigen Datentypen/Objekte (allerdings pro Instanz immer der Gleiche Typ), die dort gelagert, verwaltet und verändert werden können. \\
+	Außerdem bieten sie Operationen an, die diese Verwaltung und Veränderung der in ihnen gespeicherten Daten ermöglichen.
+
+	\subsection*{b)}
+	Ein String kann nur Buchstaben/Ziffern speichern und nicht beliebige Datentypen, deshalb ist ein String keine Datenstruktur.
+	Außerdem bieten sie keine Operationen, die die Veränderung (zumindest in Java) ermöglichen, das Strings immutable sind.
+
+	\subsection*{c)}
+	Ein Algorithmus ist eine Sequenz an Arbeitsschritten (z.B. Operationen/Instruktionen), die hintereinander ausgeführt werden und welche nach endlich vielen Schritten terminieren muss.  \\
+	Ein Algorithmus wird i.d.R. möglichst allgemein und formal definiert, um eine Implementierung in unterschiedlichen Programmiersprachen zu ermöglichen.
+
+	\subsection*{d)}
+	Manchmal können diese Abfolgen eines Algorithmus sehr komplex und verschachtelt werden, weshalb es in Fällen einfacher sein kann den Code in Pseudocode zu schreiben, um eine besseres, formaleres Verständnis zu bieten und die Übersicht über den Algorithmus zu verbessern. \\
+	Außerdem wir durch Pseudocode auf eine rein semantische Ebene abstrahiert, wodurch auch Programmierern ohne Kenntnisse der Syntax einer Programmiersprache ermöglicht wird die Funktion des Algorithmus zu begreifen und in einer ihnen bekannten Syntax/Programmiersprache zu notieren. \\
+	\\
+	**Aufgabe 2 befindet sich dank LaTeX weiter unten*
+
+	\section*{Aufgabe 3}
+	\subsection*{a)}
+	Wir bevorzugen die Liste, da diese dynamisch wachsen kann und so mit Leichtigkeit die Speicherkapazität verändert werden kann.Das ist nützlich, da wir nicht wissen, wie viele Elemente in dem gegebenen Programm verwaltet werden sollen. \\
+	Auch kann eine Aufgabe einfach in der Mitte der Liste hinzufügt oder gelöscht werden, ohne dabei Speicherplatz zu verschwenden, da gelöschte Knoten keine “Lücken” hinterlassen. Bei Arrays wüssten wir nach dem löschen nicht, welches Feld zwischen gespeicherten Elementen potenziell frei ist oder müssten uns diese freien Felder in einer extra Datenstruktur merken, was deutlich aufwendiger zu implementieren wäre. Das Hinzufügen von Elementen "in der Mitte" eines Arrays wäre bei hingegen nur begrenzt möglich und nur durch eine aufwendigere und ineffizientere Implementierung wirklich fehlerfrei. \\
+	Außerdem kann das Hinzufügen von Elementen am Ende eines Arrays deutlich komplizierter werden, wenn das Array ausgelastet ist, da auch hier ein neues Array in einer geeigneten Größe erstellt und der Inhalt aus dem alten, ausgeschöpften Array in das neue kopiert werden muss. Das ist sehr ineffizient und unnötig aufwendig , wenn es doch Listen als simple Alternative gibt.
+
+	\subsection*{b)}
+	Wenn eine festgelegte Menge an Daten zur Verfügung stehen, kann man auch einen Array zur Implementierung verwenden, da wir nun das Problem der Auslastung und dem Hinzufügen von neuen Elementen nicht haben. \\
+	Ein Beispiel für die Verwendung wäre, zumindest in C, Strings. Sie bestehen aus Arrays von Zeichen und Ganzzahlen von 0-9, und da Strings immutable sind, kann man keine Zeichen anhängen bzw. entfernen, wodurch keine dynamische Anpassung benötigt wurde. Das Auslesen von einzelnen Indizes ist dadurch sehr effizient.
+
+\section*{Aufgabe 2}
+%\lstinputlisting[language=java]{file} Für Codefile
+\begin{algorithm}
+	\caption{Spaghetti Pomodoro}
+	\begin{algorithmic} [1]
+		\State Hole kleinen Topf aus Schrank
+		\State  Stelle Topf auf Herd
+		\State  Stelle Herd auf Stufe 7 von 10
+		\State   Gebe Olivenöl hinzu
+		\While{Zutaten not kleingeschnitten}
+		\State Schneide Tomaten und Zwiebeln
+		\EndWhile
+		\State  Gebe Zwiebeln in kleinen Topf
+		\While{Zwiebeln not glasig}
+		\State Warten und immer mal wieder rühren
+		\EndWhile
+		\State  Gebe Tomaten in kleinen Topf
+		\State  Gebe Gewürze hinzu
+		\State  Stelle Deckel auf kleinen Topf
+		\State  Stelle auf niedrigste Stufe und lasse köcheln
+	\end{algorithmic}
+
+	\begin{algorithmic} [1]
+		\State Hole großen Topf aus Schrank
+		\While{Topf not zu ¾ mit Wasser gefüllt}
+		\State Fülle Wasser aus Wasserhahn in den Topf
+		\EndWhile
+		\State  Schalte Herdplatte auf die höchste Stufe
+		\State Stelle großen Topf auf Herdplatte
+		\State Streue Salz insWasser
+		\While{Wasser im Topf not am kochen}
+		\State Lasse Topf weitere Minute auf dem Herd stehen
+		\EndWhile
+		\State Hole und öffne Packung Nudeln
+		\State Schütte Nudeln in Topf
+		\State Schalte Herdplatte auf mittlere Stufe
+		\State Stelle Deckel auf Topf
+		\While{Nudel not al dente}
+		\State Lasse Nudeln 1 Minuten Kochen
+		\EndWhile
+		\State Schalte gesamten Herd aus
+		\State Hole Sieb aus Schrank
+		\State Stelle Sieb in Spüle
+		\State Schütte Nudeln in Sieb
+		\If{Nudeln is klebrig and Koch is not italiano}
+		\State Brause Nudeln mit Wasser ab
+		\State Durchmenge Nudeln
+		\EndIf
+		\State Hole 4 Teller aus dem Schrank
+		\While{Teller not angerichtet}
+		\State Fülle Teller mit Nudeln
+		\State Gebe Soße über Nudeln
+		\EndWhile
+		\Return Portionen
+	\end{algorithmic}
+
+\end{algorithm}
+
+\end{document}
