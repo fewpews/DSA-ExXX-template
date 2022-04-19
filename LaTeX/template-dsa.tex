@@ -1,19 +1,26 @@
 \documentclass{scrartcl}
-
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[]{fontenc}
 
+\usepackage{fancyhdr} % Header creation
+\usepackage[ headheight=1in]{geometry} % Page formatting to fit header
+
 \usepackage{listings}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-%\usepackage{csquotes}
+%\usepackage{csquotes} % Provides advanced facilities for inline and display quotations
 \usepackage{graphicx}
 %\usepackage{amsmath}
 %\usepackage{hyperref}
-\usepackage{fancyhdr}
-\usepackage[ headheight=1in]{geometry}
 
+\def \anton {Anton Sproll}
+\def \omid {Omid Pourazar}
+\def \jannik {Jannik Becker}
+%  ~ = Leerzeichen (wtf)
+\def \antonFull {\anton~Ilias [MNr]}
+\def \omidFull {\omid~Ilias [3608182]}
+\def \jannikFull {\jannik ~st17787 [3597837]}
 
 %TODO
 \def \workSheet {00}
@@ -22,13 +29,13 @@
 
 
 \title{DSA Abgabe Blatt \workSheet}
-\author{Anton Sproll [], Omid Pourazar [3608182], Jannik Becker [3597837]}
+\author{\anton, \omid, \jannik}
 \date{\dateOfFinishing }
 
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{}
-\rhead{Anton Sproll [] \\ Omid Pourazar [3608182] \\ Jannik Becker [3597837]}
+\rhead{\antonFull\\ \omidFull\\ \jannikFull}
 \lhead{2022 Sommersemester \\ \dateOfFinishing \\ DSA Übungsblatt \workSheet}
 \cfoot{\thepage}
 
@@ -43,17 +50,27 @@
 	%%
 	% Code
 	%%
-	
-	%\lstinputlisting[language=java]{file} Für Codefile
-	
+
+	%\lstinputlisting[language=java, firstline=37, lastline=45]{file} Für Codefile
+
+	%
+	%\begin{lstlisting} [frame=single]
+		%for i:=maxint to 0 do
+		%begin
+		%{ do nothing }
+		%end;
+		%Write('Case insensitive ');
+		%Write('Pascal keywords.');
+	%\end{lstlisting}
+
 	%%%
 	% Pseudo Code
 	%%%
-	
-	\begin{algorithm}
-		\caption{Pseudo Code}
-		\begin{algorithmic} [1]
-		\end{algorithmic}
-	\end{algorithm}
+
+	%\begin{algorithm}
+		%\caption{Pseudo Code}
+		%\begin{algorithmic} [1]
+		%\end{algorithmic}
+	%\end{algorithm}
 
 \end{document}
