@@ -7,7 +7,7 @@
 
 % Header package + overall page style change because of header:
 \usepackage{fancyhdr}
-\usepackage[ headheight=1in]{geometry} % Page formatting to fit header
+\usepackage[headheight=1in]{geometry} % Page formatting to fit header
 
 \usepackage{graphicx}
 \usepackage{listings}
@@ -19,8 +19,8 @@
 %\usepackage{algpseudocode}
 
 
-\def \courceShort {DSA}
-\def \courceFull {Datenstrukturen und Algorithmen}
+%\def \courseShort {DSA}
+\def \courseFull {Datenstrukturen \& Algorithmen}
 \def \semester {Sommersemester 2022}
 %\def \semester {Wintersemester 2022}
 
@@ -28,9 +28,12 @@
 \def \memberB {Jannik Becker}
 \def \memberC {Omid Pourazar}
 %  ~ = Leerzeichen (wtf)
-\def \memberAFull {\memberA ~st178033 [3592492]}
-\def \memberBFull {\memberB ~st177878 [3608182]}
-\def \memberCFull {\memberC ~st178028 [3597837]}
+\def \memberAMartikel {3592492}
+\def \memberBMartikel {3608182}
+\def \memberCMartikel {3597837}
+\def \memberAMail {st178033@stud.unistuttgart.de}
+\def \memberBMail {st177878@stud.unistuttgart.de}
+\def \memberCMail {st178028@stud.unistuttgart.de}
 
 
 %TODO TODO TODO TODO TODO TODO TODO
@@ -40,16 +43,32 @@
 
 
 % Print title page
-\title{\courceShort \\ \large Übungsblatt Nr. \workSheetNr}
-\author{\memberA, \memberB, \memberC}
+\title{
+	%Übungsblatt \\
+	\Huge{\workSheetNr} \\
+	\Large{\courseFull}
+}
+\author{
+	\textbf{\memberA}, \memberAMail \\
+	\textbf{\memberB}, \memberBMail \\
+	\textbf{\memberC}, \memberCMail \\ \\
+}
 \date{\dateOfFinishing}
 
 % Configuration of header
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{}
-\rhead{\memberAFull\\ \memberBFull \\ \memberCFull}
-\lhead{\semester \\ \courceFull \\ Übungsblatt Nr. \workSheetNr}
+\rhead{
+	\memberA ~[\memberAMartikel] \\
+	\memberB ~[\memberBMartikel] \\
+	\memberC ~[\memberCMartikel]
+}
+\lhead{
+	\semester \\
+	\courseFull \\
+	Übungsblatt \workSheetNr
+}
 \cfoot{\thepage}
 
 
