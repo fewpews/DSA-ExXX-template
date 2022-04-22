@@ -1,27 +1,37 @@
 \documentclass[12pt]{scrartcl}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[]{fontenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % May enhance latin letter quallity in PDF
+\usepackage[pdftex,hyperref,dvipsnames]{xcolor} % Font coloring
 
-\usepackage{fancyhdr} % Header creation
+% Header package + overall page style change because of header:
+\usepackage{fancyhdr}
 \usepackage[ headheight=1in]{geometry} % Page formatting to fit header
 
-\usepackage{listings}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-%\usepackage{csquotes} % Provides advanced facilities for inline and display quotations
 \usepackage{graphicx}
-%\usepackage{amsmath}
-%\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amstext,amsthm}
+%\usepackage{csquotes} % Provides advanced facilities for inline and display quotations
+% Pseudocode:
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+
+
+\def \courceShort {DSA}
+\def \courceFull {Datenstrukturen und Algorithmen}
+\def \semester {Sommersemester 2022}
+%\def \semester {Wintersemester 2022}
 
 \def \memberA {Anton Sproll}
 \def \memberB {Jannik Becker}
 \def \memberC {Omid Pourazar}
-
 %  ~ = Leerzeichen (wtf)
-\def \antonFull {\memberA~Ilias [MNr]}
-\def \omidFull {\memberB~Ilias [3608182]}
-\def \jannikFull {\memberC ~st17787 [3597837]}
+\def \memberAFull {\memberA ~st178033 [3592492]}
+\def \memberBFull {\memberB ~st177878 [3608182]}
+\def \memberCFull {\memberC ~st178028 [3597837]}
+
 
 %TODO TODO TODO TODO TODO TODO TODO
 \def \workSheetNr {XX}
@@ -29,62 +39,63 @@
 %TODO TODO TODO TODO TODO TODO TODO
 
 
-\title{DSA \\ \large Übungsblatt Nr. \workSheetNr}
+% Print title page
+\title{\courceShort \\ \large Übungsblatt Nr. \workSheetNr}
 \author{\memberA, \memberB, \memberC}
-\date{\dateOfFinishing }
+\date{\dateOfFinishing}
 
+% Configuration of header
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{}
-\rhead{\antonFull\\ \jannikFull \\ \omidFull}
-\lhead{Sommersemester 2022 \\ Datenstrukturen und Algorithmen \\ Übungsblatt Nr. \workSheetNr}
+\rhead{\memberAFull\\ \memberBFull \\ \memberCFull}
+\lhead{\semester \\ \courceFull \\ Übungsblatt Nr. \workSheetNr}
 \cfoot{\thepage}
 
-\begin{document}
 
+\begin{document}
+	
 	\maketitle
 	\newpage
-
-	%\textbf{text}
-	%\textit{text}
-
+	
 	\section*{Aufgabe X}
 	\subsection*{a)}
-	%\exercise{Hallo!} -> Extra package?
-
-	%%
-	% Text
-	%%
-
-	%\begin{enumerate}
-		%\item
-	%\end{enumerate}
-
-
-	%%
-	% Code
-	%%
-
-	%\lstinputlisting[language=java, firstline=37, lastline=45]{file} Für Codefile
-
-	%
-	%\begin{lstlisting} [frame=single]
-		%for i:=maxint to 0 do
-		%begin
-		%{ do nothing }
-		%end;
-		%Write('Case insensitive ');
-		%Write('Pascal keywords.');
-	%\end{lstlisting}
-
-	%%%
-	% Pseudo Code
-	%%%
-
-	%\begin{algorithm}
-		%\caption{Pseudo Code}
-		%\begin{algorithmic} [1]
-		%\end{algorithmic}
-	%\end{algorithm}
-
+	
 \end{document}
+
+%%
+% Text
+%%
+%\textbf{text}
+%\textit{text}
+
+%\begin{enumerate}
+%\item
+%\end{enumerate}
+
+
+%%
+% Code
+%%
+
+%\lstinputlisting[language=java, firstline=37, lastline=45]{file} Für Codefile
+
+%
+%\begin{lstlisting} [frame=single]
+%for i:=maxint to 0 do
+%begin
+%{ do nothing }
+%end;
+%Write('Case insensitive ');
+%Write('Pascal keywords.');
+%\end{lstlisting}
+
+%%%
+% Pseudo Code
+%%%
+
+%\begin{algorithm}
+%\caption{Pseudo Code}
+%\begin{algorithmic} [1]
+%\end{algorithmic}
+%\end{algorithm}
