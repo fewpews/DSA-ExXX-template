@@ -1,5 +1,21 @@
+# TeX creation stuff
+LaTeX/*.fls
+LaTeX/*.log
+LaTeX/*.fdb_latexmk
+LaTeX/*.synctex.gz
 
-LaTeX/Ex_XX_BeckerPourazarSproll.fls
-LaTeX/Ex_XX_BeckerPourazarSproll.log
-LaTeX/Ex_XX_BeckerPourazarSproll.fdb_latexmk
+# IDE local project preference
+.idea
+.settings
+.project
 
+LaTeX/.idea
+LaTeX/.settings
+LaTeX/.project
+
+Impl/*/.idea
+Impl/*/.project
+Impl/*/.settings
+Impl/*/*/.idea
+Impl/*/*/.settings
+Impl/*/*/.project
